@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(171, 171, 221);
+}
+
+header, main{
+    text-align: center;
+}
+
+img, video{
+    border: 6px solid;
+    color: rgb(218, 172, 218);
+    border-radius: 12px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(155, 108, 155);
+}
+
+pre{
+    text-align: left;
+    margin-left: 650px;
+}

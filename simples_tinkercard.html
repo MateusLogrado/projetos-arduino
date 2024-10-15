@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/nazrin.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">Home |</a>
+            <a href="./simples_tinkercard.html">Semaforo simples tinker |</a>
+            <a href="./simples_pratica.html">Semaforo simples Pratica |</a>
+            <a href="./duplo_tinkercard.html">Semaforo duplo tinkercard |</a>
+            <a href="./duplo_pratica.html">Semaforo duplo pratica |</a>
+            <a href="./contador_cre.html">Contador Crecente |</a>
+            <a href="./contador_decre.html">Contador decrecente |</a>
+            <a href="./contador_semaforo.html">Contador e semaforo</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Semaforo simples tinkercard</h1>
+        <article>
+            <h2>Projeto</h2>
+            <img src="./img/simples_projeto_tinker.png" alt="" width="450px">
+        </article>
+        <article>
+            <h2>Diagrama de blocos</h2>
+            <img src="./img/simples_bloco_tinker.png" alt="">
+        </article>
+        <article>
+            <h2>C++ texto</h2>
+            <pre>int num = 0;
+
+                void setup()
+                {
+                  pinMode(12, OUTPUT);
+                  pinMode(10, OUTPUT);
+                  pinMode(8, OUTPUT);
+                
+                  num = 0;
+                }
+                
+                void loop()
+                {
+                  while (num < 2) {
+                    digitalWrite(12, HIGH);
+                    digitalWrite(10, LOW);
+                    num += 1;
+                    delay(7000); // Wait for 7000 millisecond(s)
+                    digitalWrite(12, LOW);
+                    digitalWrite(8, HIGH);
+                    delay(5000); // Wait for 5000 millisecond(s)
+                    digitalWrite(8, LOW);
+                    digitalWrite(10, HIGH);
+                    delay(2000); // Wait for 2000 millisecond(s)
+                  }
+                  if (num == 2) {
+                    digitalWrite(12, LOW);
+                    digitalWrite(10, HIGH);
+                    delay(1000); // Wait for 1000 millisecond(s)
+                    digitalWrite(10, LOW);
+                    delay(1000); // Wait for 1000 millisecond(s)
+                  }
+                }</pre>
+        </article>
+    </main>
+    <footer>
+        <hr>
+        <small>Mateus Queiroz Logrado&reg;&trade;</small>
+    </footer>
+</body>
+</html>
